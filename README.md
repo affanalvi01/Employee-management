@@ -35,7 +35,7 @@ When launching the application, you will be prompted for an administrator login 
 
 Username: `admin`
 
-Password: `admin123`
+Password: `1234`
 
 ⚙️ Prerequisites
 Before compiling and running this project, ensure you have the following installed on your local machine:
