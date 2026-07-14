@@ -61,7 +61,7 @@ public class Main {
             int id = readValidInt("     Enter Admin ID: ");
 
             
-            if (username.equalsIgnoreCase("affan") && id == 2006) {
+            if (username.equalsIgnoreCase("admin") && id == 1234) {
                 System.out.println("\n     Login Successful! Welcome, Administrator.");
                 System.out.println("+------+----------------------+----------------------+-----------------+--------------------+\n");
                 return; 
