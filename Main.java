@@ -86,14 +86,19 @@ public class Main {
     int n = readValidInt("     How many members you want to add: ");
     for(int i=1;i<=n;i++){
       Employee m=new Employee();
-
-  	int id = readValidInt("     Enter ID: ");
-  	if(findEmployeeById(id) !=null){
-  		System.out.println("     Error: Employee with ID " + id + "already exists.");
-	System.out.println("+------+----------------------+----------------------+-----------------+--------------------+\n");
-
-  			return;
-  		}
+	  while (true) {
+            ID = readValidInt("     Enter ID: ");
+            
+            
+            if (findEmployeeById(ID) != null) {
+                System.out.println("     Error: Employee with ID " + ID + " already exists. Please try another ID.");
+                System.out.println("+------+----------------------+----------------------+-----------------+--------------------+\n");
+            } else {
+                
+                break; 
+            }
+        }
+  	
   	 m.setID(id);
   	 
         readValidString("     Enter name: ", m, "name");
